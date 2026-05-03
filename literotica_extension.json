@@ -1,0 +1,25 @@
+{
+  "id": "literotica",
+  "name": "Literotica",
+  "version": "1.0.0",
+  "type": "text",
+  "searchBaseUrl": "https://search.literotica.com",
+  "storyBaseUrl": "https://www.literotica.com",
+  "search": {
+    "url": "/?query={query}",
+    "listSelector": ".panel.ai_gJ",
+    "titleSelector": "h4",
+    "linkSelector": "a.ai_ii",
+    "authorSelector": "a.ai_il span.ai_im",
+    "coverSelector": ""
+  },
+  "chapters": {
+    "listSelector": "",
+    "titleSelector": "",
+    "linkSelector": ""
+  },
+  "pages": {
+    "contentSelector": "._introduction-wrap_86nfw_1",
+    "type": "text"
+  }
+}
