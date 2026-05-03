@@ -1,0 +1,35 @@
+{
+  "id": "weebcentral",
+  "name": "WeebCentral",
+  "version": "1.0.0",
+  "type": "manga",
+  "searchBaseUrl": "https://weebcentral.com",
+  "storyBaseUrl": "https://weebcentral.com",
+  "search": {
+    "url": "/search?text={query}&limit=20&offset={offset}&official=Any&display_mode=Minimal%20Display&sort=Best+Match&order=Ascending&status=Any&type=Any",
+    "listRegex": "href=\"(https?:\\/\\/weebcentral\\.com\\/series\\/([A-Z0-9]{20,})[^\"]*)\"",
+    "titleGroup": 0,
+    "linkGroup": 1,
+    "linkPrefix": "",
+    "coverGroup": 0,
+    "coverUrlTemplate": "https://temp.compsci88.com/cover/fallback/{mangaId}.jpg"
+  },
+  "chapters": {
+    "url": "/series/{mangaId}/full-chapter-list",
+    "listRegex": "href=\"https:\\/\\/weebcentral\\.com\\/chapters\\/([A-Z0-9]{20,})\"[^>]*>([\\s\\S]*?)<\\/a>",
+    "idGroup": 1,
+    "titleGroup": 2,
+    "titleRegex": "Chapter\\s+([\\d.]+)"
+  },
+  "pages": {
+    "url": "/chapters/{chapterId}/images?is_prev=False&current_page=1&reading_style=long_strip",
+    "type": "image",
+    "listRegex": "src=\"(https:\\/\\/temp\\.compsci88\\.com\\/manga\\/[^\"]+)\"",
+    "urlGroup": 1
+  },
+  "details": {
+    "titleSelector": "h1",
+    "coverSelector": ".summary_image img",
+    "descriptionSelector": ".whitespace-pre-wrap"
+  }
+}
