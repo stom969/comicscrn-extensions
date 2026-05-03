@@ -1,0 +1,35 @@
+{
+  "id": "readcomiconline",
+  "name": "ReadComicOnline",
+  "version": "1.0.0",
+  "type": "manga",
+  "searchBaseUrl": "https://readcomiconline.li",
+  "storyBaseUrl": "https://readcomiconline.li",
+  "search": {
+    "url": "/Search/Comic?keyword={query}",
+    "listRegex": "<a\\s+href=\"\\/Comic\\/([^\"]+)\"[^>]*>\\s*<img\\s+title=\"([^\"]*)\"[^>]*src=\"([^\"]*)\"",
+    "titleGroup": 2,
+    "linkGroup": 1,
+    "linkPrefix": "/Comic/",
+    "coverGroup": 3,
+    "coverPrefix": ""
+  },
+  "chapters": {
+    "url": "/Comic/{mangaId}",
+    "listRegex": "href=\"(\\/Comic\\/[^\"]*\\/Issue-([^\"?]+)[^\"]*)\"",
+    "idGroup": 1,
+    "titleGroup": 2,
+    "titleFormat": "Issue #{title}"
+  },
+  "pages": {
+    "url": "{chapterId}?readType=1",
+    "type": "image",
+    "listRegex": "<img[^>]*src=\"(https?:\\/\\/[^\"]+)\"[^>]*>",
+    "urlGroup": 1
+  },
+  "details": {
+    "titleSelector": ".barContent h2, .bigChar",
+    "coverSelector": ".rightBox img, .barContent img",
+    "descriptionSelector": ".summary, .barContent p"
+  }
+}
