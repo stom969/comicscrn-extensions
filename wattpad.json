@@ -11,6 +11,9 @@
     "titleSelector": ".MF8XD",
     "linkSelector": ".MF8XD",
     "authorSelector": ".CS12a",
-    "coverSelector": ".cover__BlyZa"
+    "coverSelector": ".cover__BlyZa",
+    "headers": {
+      "Cookie": "age_gate=1"
+    }
   }
 }
