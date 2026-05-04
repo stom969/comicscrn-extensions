@@ -7,23 +7,10 @@
   "storyBaseUrl": "https://www.wattpad.com",
   "search": {
     "url": "/stories/search?q={query}",
-    "listSelector": ".story-card, .browse-story-item",
-    "titleSelector": ".title, .story-title",
-    "linkSelector": "a.story-link, a.on-result",
-    "authorSelector": ".author, .username",
-    "coverSelector": ".story-cover img, .cover img"
-  },
-  "chapters": {
-    "url": "/api/v3/stories/{mangaId}",
-    "responseType": "json",
-    "resultsPath": "parts",
-    "idPath": "id",
-    "titlePath": "title"
-  },
-  "pages": {
-    "url": "/apiv2/storytext?id={chapterId}",
-    "responseType": "json",
-    "type": "json",
-    "textPath": "text"
+    "listSelector": "li.FVPgf",
+    "titleSelector": ".MF8XD",
+    "linkSelector": ".MF8XD",
+    "authorSelector": ".CS12a",
+    "coverSelector": ".cover__BlyZa"
   }
 }
