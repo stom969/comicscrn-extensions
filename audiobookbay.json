@@ -1,0 +1,13 @@
+{
+  "id": "audiobookbay",
+  "name": "AudioBookBay",
+  "version": "1.0.0",
+  "type": "debrid_audiobook",
+  "searchBaseUrl": "https://audiobookbay.lu",
+  "search": {
+    "url": "/page/{page}/?s={query}",
+    "listSelector": "div.post",
+    "titleSelector": ".postTitle h2 a",
+    "linkSelector": ".postTitle h2 a"
+  }
+}
