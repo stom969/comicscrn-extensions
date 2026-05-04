@@ -34,15 +34,5 @@
     "hashPath": "chapter.hash",
     "filesPath": "chapter.data",
     "urlTemplate": "{baseUrl}/data/{hash}/{fileName}"
-  },
-  "details": {
-    "url": "/manga/{mangaId}?includes[]=cover_art&includes[]=author&includes[]=artist",
-    "responseType": "json",
-    "dataPath": "data",
-    "titlePath": "attributes.title.en",
-    "coverFileNamePath": "relationships[type=cover_art].attributes.fileName",
-    "coverUrlTemplate": "https://uploads.mangadex.org/covers/{mangaId}/{coverFileName}.256.jpg",
-    "descriptionPath": "attributes.description.en",
-    "authorPath": "relationships[type=author].attributes.name"
   }
 }
