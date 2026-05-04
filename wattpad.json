@@ -6,6 +6,23 @@
   "searchBaseUrl": "https://www.wattpad.com",
   "storyBaseUrl": "https://www.wattpad.com",
   "search": {
+    "url": "/api/v3/stories/search?query={query}&limit=20&offset={offset}&showMature=1",
+    "responseType": "json",
+    "resultsPath": "data",
+    "titlePath": "title",
+    "linkPath": "id",
+    "linkPrefix": "",
+    "coverPath": "cover",
+    "authorPath": "user.name"
+  }
+}{
+  "id": "wattpad",
+  "name": "Wattpad",
+  "version": "1.0.0",
+  "type": "text",
+  "searchBaseUrl": "https://www.wattpad.com",
+  "storyBaseUrl": "https://www.wattpad.com",
+  "search": {
     "url": "/stories/search?q={query}",
     "listSelector": "li.FVPgf",
     "titleSelector": ".MF8XD",
