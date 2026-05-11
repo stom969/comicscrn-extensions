@@ -1,18 +1,14 @@
 {
-  "name": "Anna's Archive",
-  "searchBaseUrl": "https://annas-archive.li",
-  "storyBaseUrl": "https://annas-archive.li",
+  "name": "Anna's Archive (Debrid)",
+  "searchBaseUrl": "https://api.cinderreader.com",
   "type": "debrid_document",
   "search": {
-    "url": "/search?q={query}&ext=epub&lang=en&sort=newest",
-    "listSelector": "a[href^=\"/md5/\"]",
-    "titleSelector": "h3",
-    "linkSelector": "",
-    "authorSelector": "div.italic",
-    "coverSelector": "img"
-  },
-  "resolver": {
-    "selector": "a[href*=\"torrent\"], a[href^=\"magnet:\"]",
-    "attribute": "href"
+    "url": "/api/resolve?q={query}",
+    "responseType": "json",
+    "resultsPath": "results",
+    "titlePath": "title",
+    "authorPath": "author",
+    "linkPath": "mirrors.0.url",
+    "coverUrlTemplate": "https://covers.openlibrary.org/b/isbn/{isbn}-L.jpg"
   }
 }
