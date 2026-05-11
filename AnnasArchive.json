@@ -1,0 +1,19 @@
+    {
+      "name": "Anna's Archive",
+      "searchBaseUrl": "https://annas-archive.org",
+      "storyBaseUrl": "https://annas-archive.org",
+      "type": "debrid_document",
+      "search": {
+        "url": "/search?q={query}",
+        "listSelector": "a.js-vim-focus",
+        "titleSelector": "h3",
+        "linkSelector": "a[href^=\"/md5/\"]",
+        "authorSelector": "div.italic",
+        "coverSelector": "img"
+      },
+      "resolver": {
+        "selector": "a[href^=\"magnet:\"]",
+        "attribute": "href"
+      }
+    }
+    
